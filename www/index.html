@@ -1,0 +1,68 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beerduino</title>
+        <link rel="stylesheet" href="css/foundation.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+        <div class="row">
+            <div class="columns small-12">
+                <h1>Beerduino</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <form>
+            <div class="large-6 small-12 columns">
+                <p>
+                    Welcome to the <span class="beerduino">Beerduino</span> web programming utility version 0.1.5a. If you'd like to submit a bug report, please do so on the <a href="https://github.com/develpr/beerduino/issues" target="_blank">public github repo issue tracker</a>.
+                </p>
+                <p>
+                    Pull requests are always considered, so please feel free to submit new features and or fixes if you wish.
+                </p>
+                <p>
+                    Thank you for using the web programming utility for <span class="beerduino">Beerduino</span>.
+                </p>
+            </div>
+            <div class="large-6 small-12 columns">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>
+                            Beer name
+                            <input type="text" name="beerName" id="beerName" placeholder="Bud Light"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <label>
+                            Bit Display Time (milliseconds)
+                            <input type="text" name="bitTime" id="bitTime" placeholder='Number of milliseconds each "bit" should display' />
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <button class="button" id="programBeerduino" type="submit">Program <span class="beerduino">Beerduino</span></button>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+
+    </body>
+
+</html>
